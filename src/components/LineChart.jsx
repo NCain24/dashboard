@@ -21,11 +21,16 @@ const LineChart = ({ isDashboard = false }) => {
           legend: {
             text: {
               fill: colors.grey[100],
+            },
+          },
+          ticks: {
+            line: {
+              stroke: colors.grey[100],
               strokeWidth: 1,
             },
             text: {
-              fill: colors.grey[100],
-            },
+              fill: colors.grey[100]
+            }
           },
         },
         legends: {
@@ -34,7 +39,7 @@ const LineChart = ({ isDashboard = false }) => {
           },
         },
         tooltip: {
-          text: {
+          container: {
             color: colors.primary[500],
           },
         },
